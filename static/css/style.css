@@ -1,0 +1,8 @@
+#back{
+    background:url("/static/img/backgroundimage.png");
+    background-size: contain;
+    /* opacity: 0.6; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

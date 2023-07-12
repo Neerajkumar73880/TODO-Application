@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<!-- Signup Page -->
+
+
+<b>
+  <class class="container pt-4">
+    <div style="background-color: rgb(246, 245, 244)" class="col-lg-5 shadow mx-auto p-0">
+      <div style="color: rgb(221, 195, 122); font-style: italic; font-weight: bolder;"
+        class="alert alert-success bg-dark">
+        <h2>Create Account</h2>
+      </div>
+      <div class="p-4"></div>
+      <!-- Here the signup form is creted using the built-in django form  -->
+      <form method="post" action="/signup/">
+        {% csrf_token %}
+        {{ form.as_ul }}
+        <hr>
+
+        <input class="btn btn-success" type="submit" value="Create Account">
+      </form>
+    </div>
+  </class>
+</b>
+
+{% endblock %}

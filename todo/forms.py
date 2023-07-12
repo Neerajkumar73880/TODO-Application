@@ -1,0 +1,10 @@
+from django.forms import ModelForm
+from todo.models import TODO
+
+
+# Creating form
+
+class TODOForm(ModelForm):
+    class Meta:
+        model = TODO
+        fields = ['title', 'status','priority']

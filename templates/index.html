@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+<!-- Todo Main Page -->
+
+
+<div>
+
+  <div class="container pt-4">
+    <div class="row p-0 mt-4">
+      <div style="background-color: rgb(246, 245, 244)" class="col-lg-4 mx-auto shadow p-0">
+        <div style="color:rgb(221, 195, 122); font-style: italic; font-weight: bolder;" class="alert alert-info bg-dark">
+          <h2>Add New TODO</h2>
+        </div>
+        <b>
+          <div class="p-4">
+            <form action="/add-todo/" method="POST">
+              {% csrf_token %}
+              <!-- This makes the the add todo form -->
+              {{ form.as_p }}
+              <hr>
+              <input type="submit" value="ADD" class="btn btn-info">
+            </form>
+          </div>
+        </b>
+      </div>
+
+      
+
+      <div class="col ml-4">
+        <b>
+          <div style="background-color: rgb(246, 245, 244)" class="border">
+            {% if todos|length == 0 %}
+  
+            <div class="p-4">
+              <br><br>
+              <div class="alert alert-info text-center">
+                <p class="" style="font-size: 35px;">No Todos</p>
+              </div>
+              <br>
+            </div>
+  
+            {% else %}
+            <div>
+              <table class="table">
+                <thead style="color:rgb(221, 195, 122); font-style: italic; font-weight: bolder;" class="bg-dark">
+                  <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Status</th>
+                    <th>Priority</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for todo in todos %}
+                  <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ todo.title }}</td>
+                    <td>
+                      {% if todo.status == 'C' %}
+                        ✅
+                      {% else %}
+                        ⌛
+                      {% endif %}
+                    </td>
+                    <td>{{ todo.priority }}</td>
+                    <td>
+                      <a href="/delete-todo/{{todo.id}}" title="Delete" class="">❌</a>
+                      {% if todo.status == 'P' %}
+                      <a href="/change-status/{{todo.id}}/C" title="Mark Completed" class="">✅</a>
+                      {% else %}
+                      <a href="/change-status/{{todo.id}}/P" title="Mark Completed" class="">⌛</a>
+                      {% endif %}
+                    </td>
+                  </tr>
+                  {% endfor %}
+  
+                </tbody>
+              </table>
+            </div>
+  
+            {% endif %}
+          </div>
+        </b>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
