@@ -35,7 +35,11 @@ https://www.loom.com/share/4ab4e1dfbc7e4489a3b94a9df2e70a78?sid=c64186ff-1570-41
 # UI Of TooDoo App
 <br>
 
-![toodoo](https://github.com/Neerajkumar73880/TooDoo-A-todo-app-/assets/96954081/77567b6a-2afc-45e0-a652-5d78637f7fdf)
+![toodoo](https://github.com/Neerajkumar73880/TODO-Application/assets/96954081/55df413a-2f2f-43ef-9de6-bf45db4413eb)
+
+
+
+
 <br>
 <br>
 <br>
@@ -45,7 +49,10 @@ https://www.loom.com/share/4ab4e1dfbc7e4489a3b94a9df2e70a78?sid=c64186ff-1570-41
 # Register Page of TooDoo app
 <br>
 
-![signup](https://github.com/Neerajkumar73880/TooDoo-A-todo-app-/assets/96954081/e8f8f70a-3f92-42d3-959a-fe13cac17d02)
+
+![signup](https://github.com/Neerajkumar73880/TODO-Application/assets/96954081/e5e6d786-03b4-4ce5-ae6a-e3db76bf0ad9)
+
+
 
 
 
@@ -57,7 +64,9 @@ https://www.loom.com/share/4ab4e1dfbc7e4489a3b94a9df2e70a78?sid=c64186ff-1570-41
 # Login Page of TooDoo app
 <br>
 
-![login](https://github.com/Neerajkumar73880/TooDoo-A-todo-app-/assets/96954081/1fec0a24-2a77-4972-9141-0b5c9c33becd)
+![login](https://github.com/Neerajkumar73880/TODO-Application/assets/96954081/94dbb6ec-452b-4ca2-860d-790e58a939fa)
+
+
 
 
 <br>
@@ -68,5 +77,7 @@ https://www.loom.com/share/4ab4e1dfbc7e4489a3b94a9df2e70a78?sid=c64186ff-1570-41
 # Admin page of TooDoo app
 <br>
 
-![admin](https://github.com/Neerajkumar73880/TooDoo-A-todo-app-/assets/96954081/b6c62040-4385-49a9-bb06-2d12b58a507e)
+![admin](https://github.com/Neerajkumar73880/TODO-Application/assets/96954081/1c538791-e846-4c1b-8b47-a810aa2c4560)
+
+
 
